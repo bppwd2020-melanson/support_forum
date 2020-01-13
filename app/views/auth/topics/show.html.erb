@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+<h1>Show Topic</h1>
+
+  <div class="card">
+    <div class="card-header">
+  <strong>Title: <%= @topic.title %></strong>
+  <% @topic.questions.each do |q| %>
+    <p>Questions: </p><%= q.title %>
+    <%end%>
+  </div>
+  </div>
+
+<%= link_to 'Edit', edit_auth_topic_path(@auth_topic) %> |
+<%= link_to 'Back', auth_topics_path %>

@@ -1,0 +1,18 @@
+
+<div class="jumbotron">
+<h1>Add A New Question</h1>
+<%= form_with model: @question, url: auth_questions_create_path, class: "form-group", local: true do |f| %>
+  <div class="form-group">
+      <h3>Body</h3>
+      <%= f.text_area :body, class: "form-control" %><br>
+      <h3>What Have You Tried?</h3>
+      <%= f.text_area :whyt, class: "form-control" %><br>
+      <% @auth_topics.each do |t| %>
+      <%= radio_button("question", "topic", t.id) %>
+      <%= label_tag(:id, t.title ) %>
+      <% end %>
+    </div>
+
+    <%= f.submit "Create" %>
+  <% end %>
+</div>

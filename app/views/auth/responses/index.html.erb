@@ -1,0 +1,21 @@
+<h1>Listing All Responses</h1>
+<% @responses.each do |r| %>
+<div class="card">
+  <div class="card-header">
+      <b>ID: <%= r.id %></b>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Response:</h5>
+    <p class="card-text"><%= r.body %></p>
+    <div class="btn btn-secondary">
+    <%= link_to "Show Response" , auth_responses_show_url(id: r.id) %>
+  </div> |
+  <div class="btn btn-secondary">
+  <%= link_to "Edit Response" , auth_responses_edit_url(id: r.id) %>
+</div> |
+<div class="btn btn-secondary">
+<%= link_to "Delete Response" , auth_responses_delete_url(id: r.id)%>
+</div></div>
+</div>
+<br>
+  <%end%>

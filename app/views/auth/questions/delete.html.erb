@@ -1,0 +1,8 @@
+<h1>Delete Questions</h1>
+<div class="card">
+  <h5 class="card-header"><%= @question.title %></h5>
+  <div class="card-body">
+    <h5 class="card-title">
+  </div>
+</div>
+<%= link_to "Delete Question", auth_questions_destroy_path(qid: @question.id), data: {:confirm => "Are you sure you want to delete this question?"}, :method => :delete %>

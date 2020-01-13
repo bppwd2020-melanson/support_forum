@@ -1,0 +1,29 @@
+<h1>Existing Questions</h1>
+<% @questions.each do |question| %>
+<div class="row">
+  <div class="col-sm-6">
+  <div class="card">
+    <div class="card-header">
+      <b>ID: <%= question.id %></b> <b> Posted by: <%= question.user.email %> Role: <% question.user.roles.each do |r| %> <%= r.title %><%end%></b>
+    </div>
+    <div class="card-body">
+      <div class="btn btn-secondary">
+      <b><%= link_to "Question Title: " , auth_questions_show_url(qid: question.id) %></b>
+      </div>
+      <b><%= question.title %></b>
+    </div>
+    <div class="card-body">
+      <h5><b>Body: </b><%= question.body %></h5>
+      <b><p class="card-text">What Have You Tried?</p></b><%= question.whyt %>
+      <b><p class="card-text">Topic: </p></b><%= question.topic.title %>
+    <p class="text-center">  <%= link_to "Add Response" , auth_responses_new_url(qid: question.id) %> |
+      <%= link_to "Edit Question" , auth_questions_edit_url(qid: question.id) %> |
+      <%= link_to "Delete Question" , auth_questions_delete_url(qid: question.id)%> |
+      <%= link_to "Show Question" , auth_questions_show_url(qid: question.id)%>
+     </p>
+    </div>
+    </div>
+  </div>
+  </div>
+  <br>
+  <%end%>

@@ -1,0 +1,17 @@
+
+<h1>Users</h1>
+<p >!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</p>
+  <% @users.each do |u| %>
+    <p>User: <%= u.email %></p>
+    <% u.roles.each do |r| %>
+    <p>Role: <%= r.title %></p>
+    <% end %>
+    <%= form_with(url: auth_users_update_roles_url(id: u.id)) do %>
+  <% @roles.each do |r| %>
+    <%= check_box_tag(r.title, "yes", u.has_role(r)) %>
+    <%= label_tag(:id, r.title ) %>
+  <% end %>
+<%= submit_tag("Update role")  %>
+<p >!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</p>
+<% end %>
+<% end %>

@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Auth Topics</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @auth_topics.each do |auth_topic| %>
+      <tr>
+        <td><%= auth_topic.title %></td>
+        <td><%= link_to 'Show', auth_topic_path(auth_topic) %></td>
+        <td><%= link_to 'Edit', edit_auth_topic_path(auth_topic) %></td>
+        <td><%= link_to 'Destroy', auth_topic, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Auth Topic', new_auth_topic_path %>

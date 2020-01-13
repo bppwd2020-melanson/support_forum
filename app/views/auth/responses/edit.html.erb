@@ -1,0 +1,7 @@
+<h1>Edit Responses</h1>
+<%= form_with model: @response, url: auth_responses_update_path(qid: @response.id), class: "form-group" do |f| %>
+  <%= f.hidden_field :user_id, :value => current_user.id %>
+  <%= f.hidden_field :question_id, :value => @response.question_id %>
+  <%= f.text_field :body %>
+  <%= f.submit "Create" %>
+<% end %>

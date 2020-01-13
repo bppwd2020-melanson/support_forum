@@ -1,0 +1,17 @@
+
+<div class="jumbotron">
+      <h1 class="display-4">Dashboard Index</h1>
+      <p class="lead">Access to the BPPWD Support Forum is available to all students in the Programming and Web Development shop at Bay Path
+        Regional Vocational Technical High School.  The support forum enables students to post questions regarding shop curriculum and receive
+        feedback from peers.  Students will also have access to student created video tutorials and have the ability to post their own videos
+        and tutorials to help others. </p>
+      <hr class="my-4">
+        <% if user_signed_in? %>
+        <div class="btn btn-secondary btn-lg">
+            <%= link_to('Logout', destroy_user_session_path, method: :delete) %>
+        </div>
+          <% else %>
+            <%= link_to('Login', new_user_session_path) %>
+        </div>
+        </div>
+        <% end %>
