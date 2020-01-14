@@ -1,9 +1,7 @@
 <h1>Show Question</h1>
 <div class="card">
-  <h5 class="card-header"><%= @question.body %></h5>
-  <div class="card-body">
-    <h5 class="card-title"><% @question.responses.each do |r| %>
-        <%= r.body %></h5>
-  </div>
+   <%= markdown(@question.body).html_safe %>
+   <h5 class="card-title"><% @question.responses.each do |r| %>
+    <%= markdown(r.body).html_safe %>
 </div>
 <%end%>

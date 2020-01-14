@@ -46352,3 +46352,578 @@ Processing by Auth::TopicsController#show as HTML
 Completed 200 OK in 98ms (Views: 92.4ms | ActiveRecord: 3.4ms)
 
 
+Started GET "/auth/questions/index" for 127.0.0.1 at 2020-01-14 13:35:09 -0500
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/amber/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/amber/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Auth::QuestionsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /home/amber/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mRole Load (0.3ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1[0m
+  ↳ app/policies/question_policy.rb:10
+  Rendering auth/questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT `questions`.* FROM `questions`[0m
+  ↳ app/views/auth/questions/index.html.erb:2
+  [1m[36mUser Load (4.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mCACHE Role Load (0.0ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1[0m  [["user_id", 1]]
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mAuth::Topic Load (14.0ms)[0m  [1m[34mSELECT  `auth_topics`.* FROM `auth_topics` WHERE `auth_topics`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/auth/questions/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mCACHE Role Load (0.0ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1[0m  [["user_id", 1]]
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mAuth::Topic Load (1.3ms)[0m  [1m[34mSELECT  `auth_topics`.* FROM `auth_topics` WHERE `auth_topics`.`id` = 3 LIMIT 1[0m
+  ↳ app/views/auth/questions/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mCACHE Role Load (0.0ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1[0m  [["user_id", 1]]
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mAuth::Topic Load (0.3ms)[0m  [1m[34mSELECT  `auth_topics`.* FROM `auth_topics` WHERE `auth_topics`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/auth/questions/index.html.erb:16
+  Rendered auth/questions/index.html.erb within layouts/application (92.7ms)
+Completed 200 OK in 915ms (Views: 789.2ms | ActiveRecord: 27.3ms)
+
+
+Started GET "/auth/questions/edit?qid=28" for 127.0.0.1 at 2020-01-14 13:35:14 -0500
+Processing by Auth::QuestionsController#edit as HTML
+  Parameters: {"qid"=>"28"}
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /home/amber/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mQuestion Load (2.7ms)[0m  [1m[34mSELECT  `questions`.* FROM `questions` WHERE (28) LIMIT 1[0m
+  ↳ app/controllers/auth/questions_controller.rb:27
+  Rendering auth/questions/edit.html.erb within layouts/application
+  Rendered auth/questions/edit.html.erb within layouts/application (15.9ms)
+Completed 200 OK in 141ms (Views: 129.9ms | ActiveRecord: 4.8ms)
+
+
+Started PATCH "/auth/questions/update?qid=28" for 127.0.0.1 at 2020-01-14 13:35:36 -0500
+Processing by Auth::QuestionsController#update as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dUH95SPQ0utjfBx1tvFcBV5G04Td/5XonN9MNkGv0vePU62p8XbvjAeOv+fa5qg2FxCO5bek3LHRiyySKHYJCQ==", "question"=>{"title"=>"", "body"=>"I am stuck on my java ### project", "whyt"=>"everything i havbe tried"}, "commit"=>"Complete Edit", "qid"=>"28"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /home/amber/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  `questions`.* FROM `questions` WHERE (28) LIMIT 1[0m
+  ↳ app/controllers/auth/questions_controller.rb:30
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/auth/questions_controller.rb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/auth/questions_controller.rb:31
+  [1m[36mAuth::Topic Load (0.3ms)[0m  [1m[34mSELECT  `auth_topics`.* FROM `auth_topics` WHERE `auth_topics`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/auth/questions_controller.rb:31
+  [1m[36mQuestion Update (0.2ms)[0m  [1m[33mUPDATE `questions` SET `title` = '', `body` = 'I am stuck on my java ### project', `updated_at` = '2020-01-14 18:35:36' WHERE `questions`.`id` = 28[0m
+  ↳ app/controllers/auth/questions_controller.rb:31
+  [1m[35m (10.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/auth/questions_controller.rb:31
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/auth/questions_controller.rb:32
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/auth/questions_controller.rb:32
+Redirected to http://localhost:3000/auth/questions/index
+Completed 200 OK in 27ms (ActiveRecord: 12.8ms)
+
+
+Started GET "/auth/questions/index" for 127.0.0.1 at 2020-01-14 13:35:36 -0500
+Processing by Auth::QuestionsController#index as HTML
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /home/amber/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mRole Load (0.6ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1[0m
+  ↳ app/policies/question_policy.rb:10
+  Rendering auth/questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (1.4ms)[0m  [1m[34mSELECT `questions`.* FROM `questions`[0m
+  ↳ app/views/auth/questions/index.html.erb:2
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mCACHE Role Load (0.0ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1[0m  [["user_id", 1]]
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mAuth::Topic Load (0.2ms)[0m  [1m[34mSELECT  `auth_topics`.* FROM `auth_topics` WHERE `auth_topics`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/auth/questions/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mCACHE Role Load (0.0ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1[0m  [["user_id", 1]]
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mAuth::Topic Load (0.2ms)[0m  [1m[34mSELECT  `auth_topics`.* FROM `auth_topics` WHERE `auth_topics`.`id` = 3 LIMIT 1[0m
+  ↳ app/views/auth/questions/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mCACHE Role Load (0.0ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1[0m  [["user_id", 1]]
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mAuth::Topic Load (0.4ms)[0m  [1m[34mSELECT  `auth_topics`.* FROM `auth_topics` WHERE `auth_topics`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/auth/questions/index.html.erb:16
+  Rendered auth/questions/index.html.erb within layouts/application (29.8ms)
+Completed 200 OK in 139ms (Views: 127.3ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/auth/questions/edit?qid=28" for 127.0.0.1 at 2020-01-14 13:36:04 -0500
+Processing by Auth::QuestionsController#edit as HTML
+  Parameters: {"qid"=>"28"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /home/amber/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mQuestion Load (0.9ms)[0m  [1m[34mSELECT  `questions`.* FROM `questions` WHERE (28) LIMIT 1[0m
+  ↳ app/controllers/auth/questions_controller.rb:27
+  Rendering auth/questions/edit.html.erb within layouts/application
+  Rendered auth/questions/edit.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 106ms (Views: 101.9ms | ActiveRecord: 1.1ms)
+
+
+Started PATCH "/auth/questions/update?qid=28" for 127.0.0.1 at 2020-01-14 13:36:17 -0500
+Processing by Auth::QuestionsController#update as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"phiRolxn9cNGHJO3iD6ZCZo9tZokB/jINNWEMwFiw29cCsHujsHIpCLuMCXkKW0602vo+05csZF5geSXaLsYkQ==", "question"=>{"title"=>"", "body"=>"### I am stuck on my java  project", "whyt"=>"everything i havbe tried"}, "commit"=>"Complete Edit", "qid"=>"28"}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /home/amber/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  `questions`.* FROM `questions` WHERE (28) LIMIT 1[0m
+  ↳ app/controllers/auth/questions_controller.rb:30
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/auth/questions_controller.rb:31
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/auth/questions_controller.rb:31
+  [1m[36mAuth::Topic Load (0.2ms)[0m  [1m[34mSELECT  `auth_topics`.* FROM `auth_topics` WHERE `auth_topics`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/auth/questions_controller.rb:31
+  [1m[36mQuestion Update (0.2ms)[0m  [1m[33mUPDATE `questions` SET `body` = '### I am stuck on my java  project', `updated_at` = '2020-01-14 18:36:17' WHERE `questions`.`id` = 28[0m
+  ↳ app/controllers/auth/questions_controller.rb:31
+  [1m[35m (7.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/auth/questions_controller.rb:31
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/auth/questions_controller.rb:32
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/auth/questions_controller.rb:32
+Redirected to http://localhost:3000/auth/questions/index
+Completed 200 OK in 29ms (ActiveRecord: 10.4ms)
+
+
+Started GET "/auth/questions/index" for 127.0.0.1 at 2020-01-14 13:36:17 -0500
+Processing by Auth::QuestionsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /home/amber/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mRole Load (2.2ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1[0m
+  ↳ app/policies/question_policy.rb:10
+  Rendering auth/questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (1.0ms)[0m  [1m[34mSELECT `questions`.* FROM `questions`[0m
+  ↳ app/views/auth/questions/index.html.erb:2
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mCACHE Role Load (0.0ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1[0m  [["user_id", 1]]
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mAuth::Topic Load (0.2ms)[0m  [1m[34mSELECT  `auth_topics`.* FROM `auth_topics` WHERE `auth_topics`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/auth/questions/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mCACHE Role Load (0.0ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1[0m  [["user_id", 1]]
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mAuth::Topic Load (1.6ms)[0m  [1m[34mSELECT  `auth_topics`.* FROM `auth_topics` WHERE `auth_topics`.`id` = 3 LIMIT 1[0m
+  ↳ app/views/auth/questions/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mCACHE Role Load (0.0ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1[0m  [["user_id", 1]]
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mAuth::Topic Load (0.2ms)[0m  [1m[34mSELECT  `auth_topics`.* FROM `auth_topics` WHERE `auth_topics`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/auth/questions/index.html.erb:16
+  Rendered auth/questions/index.html.erb within layouts/application (28.1ms)
+Completed 200 OK in 119ms (Views: 109.8ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/auth/questions/show?qid=28" for 127.0.0.1 at 2020-01-14 13:36:37 -0500
+Processing by Auth::QuestionsController#show as HTML
+  Parameters: {"qid"=>"28"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /home/amber/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  `questions`.* FROM `questions` WHERE `questions`.`id` = 28 LIMIT 1[0m
+  ↳ app/controllers/auth/questions_controller.rb:24
+  Rendering auth/questions/show.html.erb within layouts/application
+  [1m[36mResponse Load (1.8ms)[0m  [1m[34mSELECT `responses`.* FROM `responses` WHERE `responses`.`question_id` = 28[0m
+  ↳ app/views/auth/questions/show.html.erb:6
+  Rendered auth/questions/show.html.erb within layouts/application (64.3ms)
+Completed 200 OK in 168ms (Views: 157.7ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/auth/questions/show?qid=28" for 127.0.0.1 at 2020-01-14 13:37:03 -0500
+Processing by Auth::QuestionsController#show as HTML
+  Parameters: {"qid"=>"28"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /home/amber/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mQuestion Load (0.4ms)[0m  [1m[34mSELECT  `questions`.* FROM `questions` WHERE `questions`.`id` = 28 LIMIT 1[0m
+  ↳ app/controllers/auth/questions_controller.rb:24
+  Rendering auth/questions/show.html.erb within layouts/application
+  [1m[36mResponse Load (1.4ms)[0m  [1m[34mSELECT `responses`.* FROM `responses` WHERE `responses`.`question_id` = 28[0m
+  ↳ app/views/auth/questions/show.html.erb:6
+  Rendered auth/questions/show.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 88ms (Views: 80.3ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/auth/questions/show?qid=28" for 127.0.0.1 at 2020-01-14 13:37:31 -0500
+Processing by Auth::QuestionsController#show as HTML
+  Parameters: {"qid"=>"28"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /home/amber/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT  `questions`.* FROM `questions` WHERE `questions`.`id` = 28 LIMIT 1[0m
+  ↳ app/controllers/auth/questions_controller.rb:24
+  Rendering auth/questions/show.html.erb within layouts/application
+  Rendered auth/questions/show.html.erb within layouts/application (31.8ms)
+Completed 500 Internal Server Error in 49ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `HTML_safe' for "<h3>I am stuck on my java  project</h3>\n":String
+Did you mean?  html_safe?):
+    1: <h1>Show Question</h1>
+    2: <div class="card">
+    3:    <%= markdown(@question.body).HTML_safe %>
+    4:   <h5 class="card-header"><%= @question.body %></h5>
+    5:   <div class="card-body">
+    6:     <h5 class="card-title"><% @question.responses.each do |r| %>
+  
+app/views/auth/questions/show.html.erb:3:in `_app_views_auth_questions_show_html_erb___2712084041174268382_70009718567740'
+Started GET "/auth/questions/show?qid=28" for 127.0.0.1 at 2020-01-14 13:37:45 -0500
+Processing by Auth::QuestionsController#show as HTML
+  Parameters: {"qid"=>"28"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /home/amber/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  `questions`.* FROM `questions` WHERE `questions`.`id` = 28 LIMIT 1[0m
+  ↳ app/controllers/auth/questions_controller.rb:24
+  Rendering auth/questions/show.html.erb within layouts/application
+  [1m[36mResponse Load (1.8ms)[0m  [1m[34mSELECT `responses`.* FROM `responses` WHERE `responses`.`question_id` = 28[0m
+  ↳ app/views/auth/questions/show.html.erb:6
+  Rendered auth/questions/show.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 97ms (Views: 89.1ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/auth/questions/show?qid=28" for 127.0.0.1 at 2020-01-14 13:39:14 -0500
+Processing by Auth::QuestionsController#show as HTML
+  Parameters: {"qid"=>"28"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /home/amber/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  `questions`.* FROM `questions` WHERE `questions`.`id` = 28 LIMIT 1[0m
+  ↳ app/controllers/auth/questions_controller.rb:24
+  Rendering auth/questions/show.html.erb within layouts/application
+  [1m[36mResponse Load (1.6ms)[0m  [1m[34mSELECT `responses`.* FROM `responses` WHERE `responses`.`question_id` = 28[0m
+  ↳ app/views/auth/questions/show.html.erb:4
+  Rendered auth/questions/show.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 102ms (Views: 95.9ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/auth/questions/index" for 127.0.0.1 at 2020-01-14 13:40:27 -0500
+Processing by Auth::QuestionsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /home/amber/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mRole Load (2.9ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1[0m
+  ↳ app/policies/question_policy.rb:10
+  Rendering auth/questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT `questions`.* FROM `questions`[0m
+  ↳ app/views/auth/questions/index.html.erb:2
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mCACHE Role Load (0.0ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1[0m  [["user_id", 1]]
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mAuth::Topic Load (0.2ms)[0m  [1m[34mSELECT  `auth_topics`.* FROM `auth_topics` WHERE `auth_topics`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/auth/questions/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mCACHE Role Load (0.0ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1[0m  [["user_id", 1]]
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mAuth::Topic Load (2.0ms)[0m  [1m[34mSELECT  `auth_topics`.* FROM `auth_topics` WHERE `auth_topics`.`id` = 3 LIMIT 1[0m
+  ↳ app/views/auth/questions/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mCACHE Role Load (0.0ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1[0m  [["user_id", 1]]
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mAuth::Topic Load (0.2ms)[0m  [1m[34mSELECT  `auth_topics`.* FROM `auth_topics` WHERE `auth_topics`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/auth/questions/index.html.erb:16
+  Rendered auth/questions/index.html.erb within layouts/application (24.1ms)
+Completed 200 OK in 124ms (Views: 114.5ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/auth/questions/edit?qid=28" for 127.0.0.1 at 2020-01-14 13:40:34 -0500
+Processing by Auth::QuestionsController#edit as HTML
+  Parameters: {"qid"=>"28"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /home/amber/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT  `questions`.* FROM `questions` WHERE (28) LIMIT 1[0m
+  ↳ app/controllers/auth/questions_controller.rb:27
+  Rendering auth/questions/edit.html.erb within layouts/application
+  Rendered auth/questions/edit.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 98ms (Views: 93.7ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/auth/questions/update?qid=28" for 127.0.0.1 at 2020-01-14 13:40:41 -0500
+Processing by Auth::QuestionsController#update as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0wnA7/iV1rnApIJezFIJ9P2TSHZtg4Wec09xlM9lh4cpG5CjKjPr3qRWIcygRf3HtMUVFwfYzMc+GxEwprxceQ==", "question"=>{"title"=>"", "body"=>"### I am stuck on my java  project", "whyt"=>" ## everything i havbe tried"}, "commit"=>"Complete Edit", "qid"=>"28"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /home/amber/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  `questions`.* FROM `questions` WHERE (28) LIMIT 1[0m
+  ↳ app/controllers/auth/questions_controller.rb:30
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/auth/questions_controller.rb:31
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/auth/questions_controller.rb:31
+  [1m[36mAuth::Topic Load (0.8ms)[0m  [1m[34mSELECT  `auth_topics`.* FROM `auth_topics` WHERE `auth_topics`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/auth/questions_controller.rb:31
+  [1m[36mQuestion Update (2.0ms)[0m  [1m[33mUPDATE `questions` SET `whyt` = ' ## everything i havbe tried', `updated_at` = '2020-01-14 18:40:41' WHERE `questions`.`id` = 28[0m
+  ↳ app/controllers/auth/questions_controller.rb:31
+  [1m[35m (7.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/auth/questions_controller.rb:31
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/auth/questions_controller.rb:32
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/auth/questions_controller.rb:32
+Redirected to http://localhost:3000/auth/questions/index
+Completed 200 OK in 23ms (ActiveRecord: 12.6ms)
+
+
+Started GET "/auth/questions/index" for 127.0.0.1 at 2020-01-14 13:40:41 -0500
+Processing by Auth::QuestionsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /home/amber/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mRole Load (1.3ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1[0m
+  ↳ app/policies/question_policy.rb:10
+  Rendering auth/questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT `questions`.* FROM `questions`[0m
+  ↳ app/views/auth/questions/index.html.erb:2
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mCACHE Role Load (0.0ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1[0m  [["user_id", 1]]
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mAuth::Topic Load (0.2ms)[0m  [1m[34mSELECT  `auth_topics`.* FROM `auth_topics` WHERE `auth_topics`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/auth/questions/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mCACHE Role Load (0.0ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1[0m  [["user_id", 1]]
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mAuth::Topic Load (0.3ms)[0m  [1m[34mSELECT  `auth_topics`.* FROM `auth_topics` WHERE `auth_topics`.`id` = 3 LIMIT 1[0m
+  ↳ app/views/auth/questions/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mCACHE Role Load (0.0ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1[0m  [["user_id", 1]]
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mAuth::Topic Load (2.0ms)[0m  [1m[34mSELECT  `auth_topics`.* FROM `auth_topics` WHERE `auth_topics`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/auth/questions/index.html.erb:16
+  Rendered auth/questions/index.html.erb within layouts/application (24.7ms)
+Completed 200 OK in 121ms (Views: 113.5ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/auth/questions/show?qid=28" for 127.0.0.1 at 2020-01-14 13:40:44 -0500
+Processing by Auth::QuestionsController#show as HTML
+  Parameters: {"qid"=>"28"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /home/amber/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  `questions`.* FROM `questions` WHERE `questions`.`id` = 28 LIMIT 1[0m
+  ↳ app/controllers/auth/questions_controller.rb:24
+  Rendering auth/questions/show.html.erb within layouts/application
+  [1m[36mResponse Load (2.0ms)[0m  [1m[34mSELECT `responses`.* FROM `responses` WHERE `responses`.`question_id` = 28[0m
+  ↳ app/views/auth/questions/show.html.erb:4
+  Rendered auth/questions/show.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 103ms (Views: 96.4ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/auth/questions/index" for 127.0.0.1 at 2020-01-14 13:40:46 -0500
+Processing by Auth::QuestionsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /home/amber/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mRole Load (0.3ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1[0m
+  ↳ app/policies/question_policy.rb:10
+  Rendering auth/questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT `questions`.* FROM `questions`[0m
+  ↳ app/views/auth/questions/index.html.erb:2
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mCACHE Role Load (0.0ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1[0m  [["user_id", 1]]
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mAuth::Topic Load (1.6ms)[0m  [1m[34mSELECT  `auth_topics`.* FROM `auth_topics` WHERE `auth_topics`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/auth/questions/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mCACHE Role Load (0.0ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1[0m  [["user_id", 1]]
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mAuth::Topic Load (0.2ms)[0m  [1m[34mSELECT  `auth_topics`.* FROM `auth_topics` WHERE `auth_topics`.`id` = 3 LIMIT 1[0m
+  ↳ app/views/auth/questions/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mCACHE Role Load (0.0ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1[0m  [["user_id", 1]]
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mAuth::Topic Load (0.2ms)[0m  [1m[34mSELECT  `auth_topics`.* FROM `auth_topics` WHERE `auth_topics`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/auth/questions/index.html.erb:16
+  Rendered auth/questions/index.html.erb within layouts/application (22.9ms)
+Completed 200 OK in 112ms (Views: 103.9ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/auth/questions/edit?qid=28" for 127.0.0.1 at 2020-01-14 13:40:48 -0500
+Processing by Auth::QuestionsController#edit as HTML
+  Parameters: {"qid"=>"28"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /home/amber/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mQuestion Load (1.1ms)[0m  [1m[34mSELECT  `questions`.* FROM `questions` WHERE (28) LIMIT 1[0m
+  ↳ app/controllers/auth/questions_controller.rb:27
+  Rendering auth/questions/edit.html.erb within layouts/application
+  Rendered auth/questions/edit.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 103ms (Views: 99.1ms | ActiveRecord: 1.3ms)
+
+
+Started PATCH "/auth/questions/update?qid=28" for 127.0.0.1 at 2020-01-14 13:40:54 -0500
+Processing by Auth::QuestionsController#update as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eK+MzqglPEhTGJwFs74WFasTq+5AkfYBQL0S8XwcqcWCvdyCeoMBLzfqP5ffqeIm4kX2jyrKv1gN6XJVFcVyOw==", "question"=>{"title"=>"", "body"=>"### I am stuck on my java  project", "whyt"=>" ### everything i havbe tried"}, "commit"=>"Complete Edit", "qid"=>"28"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /home/amber/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mQuestion Load (1.4ms)[0m  [1m[34mSELECT  `questions`.* FROM `questions` WHERE (28) LIMIT 1[0m
+  ↳ app/controllers/auth/questions_controller.rb:30
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/auth/questions_controller.rb:31
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/auth/questions_controller.rb:31
+  [1m[36mAuth::Topic Load (1.8ms)[0m  [1m[34mSELECT  `auth_topics`.* FROM `auth_topics` WHERE `auth_topics`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/auth/questions_controller.rb:31
+  [1m[36mQuestion Update (2.4ms)[0m  [1m[33mUPDATE `questions` SET `whyt` = ' ### everything i havbe tried', `updated_at` = '2020-01-14 18:40:54' WHERE `questions`.`id` = 28[0m
+  ↳ app/controllers/auth/questions_controller.rb:31
+  [1m[35m (7.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/auth/questions_controller.rb:31
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/auth/questions_controller.rb:32
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/auth/questions_controller.rb:32
+Redirected to http://localhost:3000/auth/questions/index
+Completed 200 OK in 25ms (ActiveRecord: 15.7ms)
+
+
+Started GET "/auth/questions/index" for 127.0.0.1 at 2020-01-14 13:40:54 -0500
+Processing by Auth::QuestionsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /home/amber/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mRole Load (0.2ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1[0m
+  ↳ app/policies/question_policy.rb:10
+  Rendering auth/questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (1.2ms)[0m  [1m[34mSELECT `questions`.* FROM `questions`[0m
+  ↳ app/views/auth/questions/index.html.erb:2
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mCACHE Role Load (0.0ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1[0m  [["user_id", 1]]
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mAuth::Topic Load (2.1ms)[0m  [1m[34mSELECT  `auth_topics`.* FROM `auth_topics` WHERE `auth_topics`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/auth/questions/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mCACHE Role Load (0.0ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1[0m  [["user_id", 1]]
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mAuth::Topic Load (3.1ms)[0m  [1m[34mSELECT  `auth_topics`.* FROM `auth_topics` WHERE `auth_topics`.`id` = 3 LIMIT 1[0m
+  ↳ app/views/auth/questions/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mCACHE Role Load (0.0ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1[0m  [["user_id", 1]]
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mAuth::Topic Load (0.2ms)[0m  [1m[34mSELECT  `auth_topics`.* FROM `auth_topics` WHERE `auth_topics`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/auth/questions/index.html.erb:16
+  Rendered auth/questions/index.html.erb within layouts/application (26.8ms)
+Completed 200 OK in 131ms (Views: 119.5ms | ActiveRecord: 7.5ms)
+
+
+Started GET "/auth/questions/show?qid=28" for 127.0.0.1 at 2020-01-14 13:40:56 -0500
+Processing by Auth::QuestionsController#show as HTML
+  Parameters: {"qid"=>"28"}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /home/amber/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT  `questions`.* FROM `questions` WHERE `questions`.`id` = 28 LIMIT 1[0m
+  ↳ app/controllers/auth/questions_controller.rb:24
+  Rendering auth/questions/show.html.erb within layouts/application
+  [1m[36mResponse Load (1.2ms)[0m  [1m[34mSELECT `responses`.* FROM `responses` WHERE `responses`.`question_id` = 28[0m
+  ↳ app/views/auth/questions/show.html.erb:4
+  Rendered auth/questions/show.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 101ms (Views: 94.8ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/auth/questions/index" for 127.0.0.1 at 2020-01-14 13:40:58 -0500
+Processing by Auth::QuestionsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /home/amber/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mRole Load (1.7ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1[0m
+  ↳ app/policies/question_policy.rb:10
+  Rendering auth/questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (2.9ms)[0m  [1m[34mSELECT `questions`.* FROM `questions`[0m
+  ↳ app/views/auth/questions/index.html.erb:2
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mCACHE Role Load (0.0ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1[0m  [["user_id", 1]]
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mAuth::Topic Load (2.7ms)[0m  [1m[34mSELECT  `auth_topics`.* FROM `auth_topics` WHERE `auth_topics`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/auth/questions/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mCACHE Role Load (0.0ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1[0m  [["user_id", 1]]
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mAuth::Topic Load (0.2ms)[0m  [1m[34mSELECT  `auth_topics`.* FROM `auth_topics` WHERE `auth_topics`.`id` = 3 LIMIT 1[0m
+  ↳ app/views/auth/questions/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mCACHE Role Load (0.0ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1[0m  [["user_id", 1]]
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mAuth::Topic Load (0.3ms)[0m  [1m[34mSELECT  `auth_topics`.* FROM `auth_topics` WHERE `auth_topics`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/auth/questions/index.html.erb:16
+  Rendered auth/questions/index.html.erb within layouts/application (24.2ms)
+Completed 200 OK in 113ms (Views: 101.7ms | ActiveRecord: 8.4ms)
+
+
+Started GET "/auth/questions/edit?qid=28" for 127.0.0.1 at 2020-01-14 13:41:02 -0500
+Processing by Auth::QuestionsController#edit as HTML
+  Parameters: {"qid"=>"28"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /home/amber/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  `questions`.* FROM `questions` WHERE (28) LIMIT 1[0m
+  ↳ app/controllers/auth/questions_controller.rb:27
+  Rendering auth/questions/edit.html.erb within layouts/application
+  Rendered auth/questions/edit.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 119ms (Views: 113.2ms | ActiveRecord: 0.7ms)
+
+
+Started PATCH "/auth/questions/update?qid=28" for 127.0.0.1 at 2020-01-14 13:41:10 -0500
+Processing by Auth::QuestionsController#update as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+9QGPCRjVkH5gzs41oNssNzJU99yQ+z9X/p3zpbrXBYBxlZw9sVrJp1xmKq6lJiDlZ8OvhgYpaQSrhdq/zKH6A==", "question"=>{"title"=>"", "body"=>"### I am stuck on my java  project", "whyt"=>"everything i havbe tried"}, "commit"=>"Complete Edit", "qid"=>"28"}
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /home/amber/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  `questions`.* FROM `questions` WHERE (28) LIMIT 1[0m
+  ↳ app/controllers/auth/questions_controller.rb:30
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/auth/questions_controller.rb:31
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/auth/questions_controller.rb:31
+  [1m[36mAuth::Topic Load (0.2ms)[0m  [1m[34mSELECT  `auth_topics`.* FROM `auth_topics` WHERE `auth_topics`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/auth/questions_controller.rb:31
+  [1m[36mQuestion Update (2.7ms)[0m  [1m[33mUPDATE `questions` SET `whyt` = 'everything i havbe tried', `updated_at` = '2020-01-14 18:41:10' WHERE `questions`.`id` = 28[0m
+  ↳ app/controllers/auth/questions_controller.rb:31
+  [1m[35m (6.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/auth/questions_controller.rb:31
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/auth/questions_controller.rb:32
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/auth/questions_controller.rb:32
+Redirected to http://localhost:3000/auth/questions/index
+Completed 200 OK in 27ms (ActiveRecord: 11.9ms)
+
+
+Started GET "/auth/questions/index" for 127.0.0.1 at 2020-01-14 13:41:10 -0500
+Processing by Auth::QuestionsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /home/amber/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mRole Load (1.4ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1[0m
+  ↳ app/policies/question_policy.rb:10
+  Rendering auth/questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (1.1ms)[0m  [1m[34mSELECT `questions`.* FROM `questions`[0m
+  ↳ app/views/auth/questions/index.html.erb:2
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mCACHE Role Load (0.0ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1[0m  [["user_id", 1]]
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mAuth::Topic Load (0.2ms)[0m  [1m[34mSELECT  `auth_topics`.* FROM `auth_topics` WHERE `auth_topics`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/auth/questions/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mCACHE Role Load (0.0ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1[0m  [["user_id", 1]]
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mAuth::Topic Load (0.3ms)[0m  [1m[34mSELECT  `auth_topics`.* FROM `auth_topics` WHERE `auth_topics`.`id` = 3 LIMIT 1[0m
+  ↳ app/views/auth/questions/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mCACHE Role Load (0.0ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1[0m  [["user_id", 1]]
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mAuth::Topic Load (0.2ms)[0m  [1m[34mSELECT  `auth_topics`.* FROM `auth_topics` WHERE `auth_topics`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/auth/questions/index.html.erb:16
+  Rendered auth/questions/index.html.erb within layouts/application (23.4ms)
+Completed 200 OK in 121ms (Views: 113.9ms | ActiveRecord: 3.6ms)
+
+

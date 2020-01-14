@@ -6,10 +6,11 @@ ruby '2.5.3'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.3'
 gem 'mysql2', '>= 0.4.4', '< 0.6.0'
-gem 'refile', require: 'refile/rails', github: 'refile/refile', branch: 'master'  
+gem 'refile', require: 'refile/rails', github: 'refile/refile', branch: 'master'
 gem 'refile-mini_magick', github: 'refile/refile-mini_magick', branch: 'master'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
+gem 'redcarpet'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
