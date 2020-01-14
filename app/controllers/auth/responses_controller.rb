@@ -10,7 +10,10 @@ class Auth::ResponsesController < ApplicationController
   end
 
   def create
+    puts "parameest"
+
     @response = Response.new(response_params)
+    puts @response.question.id
     if @response.save
       redirect_to auth_responses_index_path
     else
@@ -42,6 +45,6 @@ class Auth::ResponsesController < ApplicationController
   end
   private
   def response_params
-    params.require(:response).permit(:body, :user_id, :question_id)
+    params.require(:response).permit(:body, :user_id, :question_id, :project_files)
   end
 end

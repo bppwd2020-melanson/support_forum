@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_11_15_182356) do
+ActiveRecord::Schema.define(version: 2020_01_14_161552) do
 
   create_table "auth_topics", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "title"
@@ -26,6 +26,10 @@ ActiveRecord::Schema.define(version: 2019_11_15_182356) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "topic_id"
+    t.string "project_files_id"
+    t.string "project_files_filename"
+    t.string "project_files_size"
+    t.string "project_files_content_type"
   end
 
   create_table "responses", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -34,6 +38,10 @@ ActiveRecord::Schema.define(version: 2019_11_15_182356) do
     t.integer "question_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "project_files_id"
+    t.string "project_files_filename"
+    t.string "project_files_size"
+    t.string "project_files_content_type"
   end
 
   create_table "roles", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|

@@ -7,15 +7,14 @@
       <b>ID: <%= question.id %></b> <b> Posted by: <%= question.user.email %> Role: <% question.user.roles.each do |r| %> <%= r.title %><%end%></b>
     </div>
     <div class="card-body">
-      <div class="btn btn-secondary">
       <b><%= link_to "Question Title: " , auth_questions_show_url(qid: question.id) %></b>
-      </div>
       <b><%= question.title %></b>
     </div>
     <div class="card-body">
-      <h5><b>Body: </b><%= question.body %></h5>
+      <p><b>Body: </b><%= question.body %></p>
       <b><p class="card-text">What Have You Tried?</p></b><%= question.whyt %>
       <b><p class="card-text">Topic: </p></b><%= question.topic.title %>
+      <%= link_to "Download Attachment", attachment_url(question, :project_files) %>
     <p class="text-center">  <%= link_to "Add Response" , auth_responses_new_url(qid: question.id) %> |
       <%= link_to "Edit Question" , auth_questions_edit_url(qid: question.id) %> |
       <%= link_to "Delete Question" , auth_questions_delete_url(qid: question.id)%> |

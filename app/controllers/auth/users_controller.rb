@@ -15,4 +15,5 @@ class Auth::UsersController < ApplicationController
     end
     redirect_to auth_users_index_path
   end
+
 end

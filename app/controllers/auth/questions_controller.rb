@@ -10,7 +10,7 @@ class Auth::QuestionsController < ApplicationController
     @question = Question.new
     @auth_topics = Auth::Topic.all
   end
-  def create  
+  def create
     @question = Question.new(question_params)
     @question.user_id = current_user.id
     @question.topic_id = params[:question][:topic]
@@ -49,6 +49,6 @@ class Auth::QuestionsController < ApplicationController
   end
   private
   def question_params
-    params.require(:question).permit(:title, :body, :whyt, :user_id)
+    params.require(:question).permit(:title, :body, :whyt, :user_id, :project_files)
   end
 end

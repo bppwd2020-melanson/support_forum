@@ -5,7 +5,7 @@
     <div class="card-header">
   <strong>Title: <%= @topic.title %></strong>
   <% @topic.questions.each do |q| %>
-    <p>Questions: </p><%= q.title %>
+    <p>Questions: </p><%= q.body %>
     <%end%>
   </div>
   </div>
