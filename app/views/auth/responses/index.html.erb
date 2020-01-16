@@ -6,7 +6,7 @@
   </div>
   <div class="card-body">
     <h5 class="card-title">Response: </h5>
-    <p class="card-text"><%= r.body %></p>
+    <p class="card-text"><%= markdown(r.body).html_safe %></p>
     <br>
     <%= link_to "Download Attachment", attachment_url(r, :project_files) %> |
     <%= link_to "Show Response" , auth_responses_show_url(id: r.id) %> |

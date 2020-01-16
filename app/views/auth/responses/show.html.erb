@@ -1,9 +1,9 @@
 <h1>Show Response</h1>
 <div class="card">
   <div class="card-header">
-    <%= @response.question.body %>
+    <%= markdown(@response.question.body).html_safe %>
   </div>
   <div class="card-body">
-    <h5 class="card-title"><%= @response.body %></h5>
+    <h5 class="card-title"><%= markdown(@response.body).html_safe %></h5>
   </div>
 </div>
