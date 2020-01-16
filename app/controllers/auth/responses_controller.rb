@@ -24,16 +24,16 @@ class Auth::ResponsesController < ApplicationController
      @response = Response.find(params[:id])
   end
   def edit
-    @response = Response.find_by(params[:qid])
+  	@response = Response.find(params[:id])
   end
+
   def update
-    @response = Response.find(params[:qid])
-    @response.update(response_params)
-    if @response.save
-      redirect_to auth_responses_index_path
-    else
-      render auth_responses_edit_path
-    end
+  	@response = Response.find(params[:id])
+  	if @response.update(response_params)
+	  	redirect_to auth_responses_index_path
+	else
+		render auth_responses_new_path
+	end
   end
   def destroy
     @response = Response.find(params[:qid])

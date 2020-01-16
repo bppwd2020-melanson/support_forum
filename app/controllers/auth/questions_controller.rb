@@ -24,17 +24,17 @@ class Auth::QuestionsController < ApplicationController
     @question = Question.find(params[:qid])
   end
   def edit
-    @question = Question.find_by(params[:qid])
+  	@question = Question.find(params[:qid])
   end
+
   def update
-    @question = Question.find_by(params[:qid])
-    @question.update(question_params)
-    if @question.save
-      redirect_to auth_questions_index_path
-    else
-      render auth_questions_new_path
-    end
-  end
+  	@question = Question.find(params[:id])
+  	if @question.update(question_params)
+	  	redirect_to auth_questions_index_path
+	else
+		render auth_questions_new_path
+	end
+end
   def destroy
     @question = Question.find(params[:qid])
     @question.responses.each do |r|

@@ -1,25 +1,27 @@
-<h1>Edit Questions</h1>
-<%= form_with model: @question, url: auth_questions_update_path(qid: @question.id), class: "form-group" do |f| %>
-    <div class="container-center">
-      <h2>
-      <label for="exampleFormControlTextarea1">Title</label>
-      <br>
-      </h2>
-        <%= f.text_field :title, size: "60x8" %>
-    </div>
-    <div class="container-center">
-      <h2>
-      <label for="exampleFormControlTextarea1">Body</label>
-      </h2>
-      <br>
-      <%= f.text_area :body, size: "60x8" %>
-    </div>
-    <div class="container-center">
-      <h2>
-      <label for="exampleFormControlTextarea1">What Have You Tried?</label>
-      </h2>
-      <br>
-      <%= f.text_area :whyt, size: "60x4" %>
-    </div>
-    <%= f.submit "Complete Edit" %>
-  <% end %>
+
+  <div class="col-10 m-auto">
+    <h1>New Question</h1>
+
+    <%= form_with model: @question, url: auth_questions_update_path(id: @question), local: true do |f| %>
+
+      <div class="form-group">
+        <label for="titleInput">Posted By: <%= current_user.email %></label>
+        <%= f.hidden_field :user_id, :value => current_user.id %>
+      </div>
+      <div class="form-group">
+        <label for="titleInput">Title</label>
+        <%= f.text_field :title, class: "form-control", placeholder: "Enter a title for your question" %>
+        <small id="titleHelp" class="form-text text-muted">Example: Pending Migration Error</small>
+      </div>
+      <div class="form-group">
+        <label for="bodyTextfield">Body</label>
+        <%= f.text_area :body, placeholder: "Enter your detailed question here...", size: "60x12", class: "form-control" %>
+      </div>
+      <div class="form-group">
+        <label for="bodyTextfield">What have you tried?</label>
+        <%= f.text_area :whyt, placeholder: "What have you tried already, prior to posting this question...", size: "60x12", class: "form-control" %>
+      </div>
+      <%= f.submit "Update Question", class: "btn btn-primary" %>
+      <%= link_to "Back", auth_questions_index_path, class: "ml-2" %>
+    <% end %>
+  </div>

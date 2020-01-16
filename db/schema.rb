@@ -23,9 +23,9 @@ ActiveRecord::Schema.define(version: 2020_01_14_161552) do
     t.text "body"
     t.text "whyt"
     t.integer "user_id"
+    t.integer "topic_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "topic_id"
     t.string "project_files_id"
     t.string "project_files_filename"
     t.string "project_files_size"
