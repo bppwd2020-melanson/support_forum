@@ -11,7 +11,8 @@
     <%= link_to "Download Attachment", attachment_url(r, :project_files) %> |
     <%= link_to "Show Response" , auth_responses_show_url(id: r.id) %> |
   <%= link_to "Edit Response" , auth_responses_edit_url(id: r.id) %> |
-<%= link_to "Delete Response" , auth_responses_delete_url(id: r.id)%>
+<%= link_to "Delete Response" , auth_responses_delete_url(id: r.id)%> |
+<%= link_to "Add Comment" , comment_url(id: r.id) %>
 </div></div>
 <br>
   <%end%>

@@ -15,9 +15,10 @@
       <b><p class="card-text">What Have You Tried?</p></b><%= markdown(question.whyt).html_safe %>
       <b><p class="card-text">Topic: </p></b><%= question.topic.title %>
       <%= link_to "Download Attachment", attachment_url(question, :project_files) %>
-    <p class="text-center">  <%= link_to "Add Response" , auth_responses_new_url(qid: question.id) %> |
+      <p class="text-center">  <%= link_to "Add Response" , auth_responses_new_url(qid: question.id) %> |
       <%= link_to "Edit Question" , auth_questions_edit_url(qid: question.id) %> |
-      <%= link_to "Delete Question" , auth_questions_delete_url(qid: question.id)%>
+      <%= link_to "Delete Question" , auth_questions_delete_url(qid: question.id)%> 
+
      </p>
     </div>
     </div>

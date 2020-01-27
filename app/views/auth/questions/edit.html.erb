@@ -5,6 +5,7 @@
     <%= form_with model: @question, url: auth_questions_update_path(id: @question), local: true do |f| %>
 
       <div class="form-group">
+        <%= f.attachment_field :project_files %>
         <label for="titleInput">Posted By: <%= current_user.email %></label>
         <%= f.hidden_field :user_id, :value => current_user.id %>
       </div>
@@ -21,7 +22,7 @@
         <label for="bodyTextfield">What have you tried?</label>
         <%= f.text_area :whyt, placeholder: "What have you tried already, prior to posting this question...", size: "60x12", class: "form-control" %>
       </div>
-      <%= f.submit "Update Question", class: "btn btn-primary" %>
+      <%= f.submit "Update Question" %>
       <%= link_to "Back", auth_questions_index_path, class: "ml-2" %>
     <% end %>
   </div>
