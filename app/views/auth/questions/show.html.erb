@@ -2,6 +2,7 @@
 <div class="card">
    <%= markdown(@question.body).html_safe %>
    <h5 class="card-title"><% @question.responses.each do |r| %>
+     <p><%= @question.comments %></p>
     <%= markdown(r.body).html_safe %>
     <%= link_to "Add Comment" , new_comment_url(commentable_id: @question.id, commentable_type: @question.class.name)%>
 </div>

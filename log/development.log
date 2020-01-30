@@ -54581,3 +54581,925 @@ Processing by Auth::QuestionsController#index as HTML
 Completed 200 OK in 155ms (Views: 140.9ms | ActiveRecord: 9.2ms)
 
 
+Started GET "/pages/all_announcements" for 127.0.0.1 at 2020-01-30 09:13:06 -0500
+  [1m[35m (3.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/amber/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (3.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/amber/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  
+ActionController::RoutingError (No route matches [GET] "/pages/all_announcements"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/pages/shop_announcements" for 127.0.0.1 at 2020-01-30 09:13:15 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/pages/shop_announcements"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/pages/all_announcements" for 127.0.0.1 at 2020-01-30 09:13:21 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/pages/all_announcements"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/pages/all_announcements" for 127.0.0.1 at 2020-01-30 09:15:19 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/pages/all_announcements"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2020-01-30 09:15:58 -0500
+  [1m[35m (2.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/amber/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/amber/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 645ms (Views: 633.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/dashboard/index" for 127.0.0.1 at 2020-01-30 09:16:00 -0500
+Processing by Auth::DashboardController#index as HTML
+Completed 401 Unauthorized in 9ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-01-30 09:16:00 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (21.6ms)
+Completed 200 OK in 171ms (Views: 145.5ms | ActiveRecord: 4.6ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2020-01-30 09:16:02 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sglVQu4wQEuGWEchzFZGqQ5ovTk1q65gL0h60n4EPY5VGiVuYxVKpSpH9fiAMzTHNTC6dI2R9aNW5lRQTKH7QQ==", "user"=>{"email"=>"a.melanson@email.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'a.melanson@email.com' ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /home/amber/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/auth/dashboard/index
+Completed 302 Found in 239ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/auth/dashboard/index" for 127.0.0.1 at 2020-01-30 09:16:02 -0500
+Processing by Auth::DashboardController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /home/amber/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering auth/dashboard/index.html.erb within layouts/application
+  Rendered auth/dashboard/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 84ms (Views: 79.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/comments" for 127.0.0.1 at 2020-01-30 09:16:04 -0500
+Processing by CommentsController#index as HTML
+  Rendering comments/index.html.erb within layouts/application
+  [1m[36mComment Load (3.3ms)[0m  [1m[34mSELECT `comments`.* FROM `comments`[0m
+  ↳ app/views/comments/index.html.erb:14
+  Rendered comments/index.html.erb within layouts/application (24.3ms)
+Completed 200 OK in 172ms (Views: 164.1ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/comments/2" for 127.0.0.1 at 2020-01-30 09:16:06 -0500
+Processing by CommentsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mComment Load (1.6ms)[0m  [1m[34mSELECT  `comments`.* FROM `comments` WHERE `comments`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/comments_controller.rb:67
+  Rendering comments/show.html.erb within layouts/application
+  Rendered comments/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 118ms (Views: 110.5ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/auth/questions/index" for 127.0.0.1 at 2020-01-30 09:16:09 -0500
+Processing by Auth::QuestionsController#index as HTML
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /home/amber/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mRole Load (2.2ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1[0m
+  ↳ app/policies/question_policy.rb:10
+  Rendering auth/questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (3.5ms)[0m  [1m[34mSELECT `questions`.* FROM `questions`[0m
+  ↳ app/views/auth/questions/index.html.erb:2
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mRole Load (2.8ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 3[0m
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mAuth::Topic Load (0.4ms)[0m  [1m[34mSELECT  `auth_topics`.* FROM `auth_topics` WHERE `auth_topics`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/auth/questions/index.html.erb:16
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mRole Load (0.2ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 2[0m
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mAuth::Topic Load (1.1ms)[0m  [1m[34mSELECT  `auth_topics`.* FROM `auth_topics` WHERE `auth_topics`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/auth/questions/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mCACHE Role Load (0.0ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 2[0m  [["user_id", 2]]
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mAuth::Topic Load (2.7ms)[0m  [1m[34mSELECT  `auth_topics`.* FROM `auth_topics` WHERE `auth_topics`.`id` = 3 LIMIT 1[0m
+  ↳ app/views/auth/questions/index.html.erb:16
+  Rendered auth/questions/index.html.erb within layouts/application (95.7ms)
+Completed 200 OK in 282ms (Views: 159.8ms | ActiveRecord: 28.2ms)
+
+
+Started GET "/auth/questions/show?qid=1" for 127.0.0.1 at 2020-01-30 09:16:13 -0500
+Processing by Auth::QuestionsController#show as HTML
+  Parameters: {"qid"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /home/amber/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  `questions`.* FROM `questions` WHERE `questions`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/auth/questions_controller.rb:24
+  Rendering auth/questions/show.html.erb within layouts/application
+  [1m[36mResponse Load (0.2ms)[0m  [1m[34mSELECT `responses`.* FROM `responses` WHERE `responses`.`question_id` = 1[0m
+  ↳ app/views/auth/questions/show.html.erb:4
+  Rendered auth/questions/show.html.erb within layouts/application (35.2ms)
+Completed 200 OK in 116ms (Views: 107.7ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/auth/questions/show?qid=1" for 127.0.0.1 at 2020-01-30 09:18:36 -0500
+Processing by Auth::QuestionsController#show as HTML
+  Parameters: {"qid"=>"1"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /home/amber/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT  `questions`.* FROM `questions` WHERE `questions`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/auth/questions_controller.rb:24
+  Rendering auth/questions/show.html.erb within layouts/application
+  [1m[36mResponse Load (2.4ms)[0m  [1m[34mSELECT `responses`.* FROM `responses` WHERE `responses`.`question_id` = 1[0m
+  ↳ app/views/auth/questions/show.html.erb:4
+  Rendered auth/questions/show.html.erb within layouts/application (30.0ms)
+Completed 500 Internal Server Error in 48ms (ActiveRecord: 3.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `comment' for #<Response:0x00007fe2859e31c0>
+Did you mean?  comments
+               comments=):
+    2: <div class="card">
+    3:    <%= markdown(@question.body).html_safe %>
+    4:    <h5 class="card-title"><% @question.responses.each do |r| %>
+    5:      <p><%= r.comment %></p>
+    6:     <%= markdown(r.body).html_safe %>
+    7:     <%= link_to "Add Comment" , new_comment_url(commentable_id: @question.id, commentable_type: @question.class.name)%>
+    8: </div>
+  
+app/views/auth/questions/show.html.erb:5:in `block in _app_views_auth_questions_show_html_erb__1878648120027401422_70305440665780'
+app/views/auth/questions/show.html.erb:4:in `_app_views_auth_questions_show_html_erb__1878648120027401422_70305440665780'
+Started GET "/auth/questions/show?qid=1" for 127.0.0.1 at 2020-01-30 09:18:52 -0500
+Processing by Auth::QuestionsController#show as HTML
+  Parameters: {"qid"=>"1"}
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /home/amber/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT  `questions`.* FROM `questions` WHERE `questions`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/auth/questions_controller.rb:24
+  Rendering auth/questions/show.html.erb within layouts/application
+  [1m[36mResponse Load (1.2ms)[0m  [1m[34mSELECT `responses`.* FROM `responses` WHERE `responses`.`question_id` = 1[0m
+  ↳ app/views/auth/questions/show.html.erb:4
+  Rendered auth/questions/show.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 92ms (Views: 85.1ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/auth/questions/show?qid=1" for 127.0.0.1 at 2020-01-30 09:19:56 -0500
+Processing by Auth::QuestionsController#show as HTML
+  Parameters: {"qid"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /home/amber/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mQuestion Load (0.6ms)[0m  [1m[34mSELECT  `questions`.* FROM `questions` WHERE `questions`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/auth/questions_controller.rb:24
+  Rendering auth/questions/show.html.erb within layouts/application
+  [1m[36mResponse Load (2.8ms)[0m  [1m[34mSELECT `responses`.* FROM `responses` WHERE `responses`.`question_id` = 1[0m
+  ↳ app/views/auth/questions/show.html.erb:4
+  Rendered auth/questions/show.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 91ms (Views: 83.4ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/auth/responses/index" for 127.0.0.1 at 2020-01-30 09:19:58 -0500
+Processing by Auth::ResponsesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /home/amber/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering auth/responses/index.html.erb within layouts/application
+  [1m[36mResponse Load (0.2ms)[0m  [1m[34mSELECT `responses`.* FROM `responses`[0m
+  ↳ app/views/auth/responses/index.html.erb:2
+  Rendered auth/responses/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 93ms (Views: 87.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/auth/responses/show?id=1" for 127.0.0.1 at 2020-01-30 09:20:01 -0500
+Processing by Auth::ResponsesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /home/amber/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mResponse Load (0.2ms)[0m  [1m[34mSELECT  `responses`.* FROM `responses` WHERE `responses`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/auth/responses_controller.rb:24
+  Rendering auth/responses/show.html.erb within layouts/application
+  [1m[36mQuestion Load (1.4ms)[0m  [1m[34mSELECT  `questions`.* FROM `questions` WHERE `questions`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/auth/responses/show.html.erb:4
+  Rendered auth/responses/show.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 92ms (Views: 83.2ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/auth/responses/show?id=1" for 127.0.0.1 at 2020-01-30 09:20:37 -0500
+Processing by Auth::ResponsesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /home/amber/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mResponse Load (0.2ms)[0m  [1m[34mSELECT  `responses`.* FROM `responses` WHERE `responses`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/auth/responses_controller.rb:24
+  Rendering auth/responses/show.html.erb within layouts/application
+  [1m[36mQuestion Load (5.2ms)[0m  [1m[34mSELECT  `questions`.* FROM `questions` WHERE `questions`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/auth/responses/show.html.erb:4
+  [1m[36mComment Load (6.0ms)[0m  [1m[34mSELECT  `comments`.* FROM `comments` WHERE `comments`.`commentable_id` = 1 AND `comments`.`commentable_type` = 'Response' LIMIT 11[0m
+  ↳ /usr/share/rvm/rubies/ruby-2.5.3/lib/ruby/gems/2.5.0/gems/did_you_mean-1.2.0/lib/did_you_mean/core_ext/name_error.rb:8
+  Rendered auth/responses/show.html.erb within layouts/application (25.7ms)
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 13.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `title' for #<ActiveRecord::Associations::CollectionProxy []>):
+     5:   </div>
+     6:   <div class="card-body">
+     7:     <h5 class="card-title"><%= markdown(@response.body).html_safe %></h5>
+     8:     <h5><%= @response.comments.title %></h5>
+     9:   </div>
+    10: </div>
+  
+app/views/auth/responses/show.html.erb:8:in `_app_views_auth_responses_show_html_erb__2898667696494213666_70305433747480'
+Started GET "/auth/responses/show?id=1" for 127.0.0.1 at 2020-01-30 09:21:42 -0500
+Processing by Auth::ResponsesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /home/amber/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mResponse Load (2.1ms)[0m  [1m[34mSELECT  `responses`.* FROM `responses` WHERE `responses`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/auth/responses_controller.rb:24
+  Rendering auth/responses/show.html.erb within layouts/application
+  [1m[36mQuestion Load (2.3ms)[0m  [1m[34mSELECT  `questions`.* FROM `questions` WHERE `questions`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/auth/responses/show.html.erb:4
+  [1m[36mComment Load (2.4ms)[0m  [1m[34mSELECT  `comments`.* FROM `comments` WHERE `comments`.`commentable_id` = 1 AND `comments`.`commentable_type` = 'Response' LIMIT 11[0m
+  ↳ /usr/share/rvm/rubies/ruby-2.5.3/lib/ruby/gems/2.5.0/gems/did_you_mean-1.2.0/lib/did_you_mean/core_ext/name_error.rb:8
+  Rendered auth/responses/show.html.erb within layouts/application (12.7ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 7.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `body' for #<ActiveRecord::Associations::CollectionProxy []>):
+     5:   </div>
+     6:   <div class="card-body">
+     7:     <h5 class="card-title"><%= markdown(@response.body).html_safe %></h5>
+     8:     <h5><%= @response.comments.body %></h5>
+     9:   </div>
+    10: </div>
+  
+app/views/auth/responses/show.html.erb:8:in `_app_views_auth_responses_show_html_erb__2898667696494213666_70305443577860'
+Started GET "/auth/responses/index" for 127.0.0.1 at 2020-01-30 09:21:46 -0500
+Processing by Auth::ResponsesController#index as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /home/amber/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering auth/responses/index.html.erb within layouts/application
+  [1m[36mResponse Load (1.9ms)[0m  [1m[34mSELECT `responses`.* FROM `responses`[0m
+  ↳ app/views/auth/responses/index.html.erb:2
+  Rendered auth/responses/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 84ms (Views: 78.4ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/auth/responses/show?id=1" for 127.0.0.1 at 2020-01-30 10:05:01 -0500
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/amber/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Auth::ResponsesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /home/amber/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mResponse Load (0.2ms)[0m  [1m[34mSELECT  `responses`.* FROM `responses` WHERE `responses`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/auth/responses_controller.rb:24
+  Rendering auth/responses/show.html.erb within layouts/application
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT  `questions`.* FROM `questions` WHERE `questions`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/auth/responses/show.html.erb:4
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT  `comments`.* FROM `comments` WHERE `comments`.`commentable_id` = 1 AND `comments`.`commentable_type` = 'Response' LIMIT 11[0m
+  ↳ /usr/share/rvm/rubies/ruby-2.5.3/lib/ruby/gems/2.5.0/gems/did_you_mean-1.2.0/lib/did_you_mean/core_ext/name_error.rb:8
+  Rendered auth/responses/show.html.erb within layouts/application (15.2ms)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 2.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `body' for #<ActiveRecord::Associations::CollectionProxy []>):
+     5:   </div>
+     6:   <div class="card-body">
+     7:     <h5 class="card-title"><%= markdown(@response.body).html_safe %></h5>
+     8:     <h5><%= @response.comments.body %></h5>
+     9:   </div>
+    10: </div>
+  
+app/views/auth/responses/show.html.erb:8:in `_app_views_auth_responses_show_html_erb__2898667696494213666_70305443574660'
+Started GET "/auth/responses/show?id=1" for 127.0.0.1 at 2020-01-30 10:05:11 -0500
+Processing by Auth::ResponsesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /home/amber/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mResponse Load (0.2ms)[0m  [1m[34mSELECT  `responses`.* FROM `responses` WHERE `responses`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/auth/responses_controller.rb:24
+  Rendering auth/responses/show.html.erb within layouts/application
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  `questions`.* FROM `questions` WHERE `questions`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/auth/responses/show.html.erb:4
+  [1m[36mComment Load (2.7ms)[0m  [1m[34mSELECT  `comments`.* FROM `comments` WHERE `comments`.`commentable_id` = 1 AND `comments`.`commentable_type` = 'Response' LIMIT 11[0m
+  ↳ /usr/share/rvm/rubies/ruby-2.5.3/lib/ruby/gems/2.5.0/gems/did_you_mean-1.2.0/lib/did_you_mean/core_ext/name_error.rb:8
+  Rendered auth/responses/show.html.erb within layouts/application (14.6ms)
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 3.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `body' for #<ActiveRecord::Associations::CollectionProxy []>):
+     5:   </div>
+     6:   <div class="card-body">
+     7:     <h5 class="card-title"><%= markdown(@response.body).html_safe %></h5>
+     8:     <h5><%= @response.comments.body %></h5>
+     9:   </div>
+    10: </div>
+  
+app/views/auth/responses/show.html.erb:8:in `_app_views_auth_responses_show_html_erb__2898667696494213666_70305444527260'
+Started GET "/auth/responses/show?id=1" for 127.0.0.1 at 2020-01-30 10:05:14 -0500
+Processing by Auth::ResponsesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /home/amber/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mResponse Load (0.2ms)[0m  [1m[34mSELECT  `responses`.* FROM `responses` WHERE `responses`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/auth/responses_controller.rb:24
+  Rendering auth/responses/show.html.erb within layouts/application
+  [1m[36mQuestion Load (1.4ms)[0m  [1m[34mSELECT  `questions`.* FROM `questions` WHERE `questions`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/auth/responses/show.html.erb:4
+  [1m[36mComment Load (1.6ms)[0m  [1m[34mSELECT  `comments`.* FROM `comments` WHERE `comments`.`commentable_id` = 1 AND `comments`.`commentable_type` = 'Response' LIMIT 11[0m
+  ↳ /usr/share/rvm/rubies/ruby-2.5.3/lib/ruby/gems/2.5.0/gems/did_you_mean-1.2.0/lib/did_you_mean/core_ext/name_error.rb:8
+  Rendered auth/responses/show.html.erb within layouts/application (11.8ms)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 4.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `body' for #<ActiveRecord::Associations::CollectionProxy []>):
+     5:   </div>
+     6:   <div class="card-body">
+     7:     <h5 class="card-title"><%= markdown(@response.body).html_safe %></h5>
+     8:     <h5><%= @response.comments.body %></h5>
+     9:   </div>
+    10: </div>
+  
+app/views/auth/responses/show.html.erb:8:in `_app_views_auth_responses_show_html_erb__2898667696494213666_70305432725420'
+Started GET "/auth/responses/index" for 127.0.0.1 at 2020-01-30 10:05:16 -0500
+Processing by Auth::ResponsesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /home/amber/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering auth/responses/index.html.erb within layouts/application
+  [1m[36mResponse Load (1.9ms)[0m  [1m[34mSELECT `responses`.* FROM `responses`[0m
+  ↳ app/views/auth/responses/index.html.erb:2
+  Rendered auth/responses/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 82ms (Views: 77.9ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/auth/responses/show?id=1" for 127.0.0.1 at 2020-01-30 10:05:18 -0500
+Processing by Auth::ResponsesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /home/amber/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mResponse Load (0.2ms)[0m  [1m[34mSELECT  `responses`.* FROM `responses` WHERE `responses`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/auth/responses_controller.rb:24
+  Rendering auth/responses/show.html.erb within layouts/application
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT  `questions`.* FROM `questions` WHERE `questions`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/auth/responses/show.html.erb:4
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT  `comments`.* FROM `comments` WHERE `comments`.`commentable_id` = 1 AND `comments`.`commentable_type` = 'Response' LIMIT 11[0m
+  ↳ /usr/share/rvm/rubies/ruby-2.5.3/lib/ruby/gems/2.5.0/gems/did_you_mean-1.2.0/lib/did_you_mean/core_ext/name_error.rb:8
+  Rendered auth/responses/show.html.erb within layouts/application (17.2ms)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `body' for #<ActiveRecord::Associations::CollectionProxy []>):
+     5:   </div>
+     6:   <div class="card-body">
+     7:     <h5 class="card-title"><%= markdown(@response.body).html_safe %></h5>
+     8:     <h5><%= @response.comments.body %></h5>
+     9:   </div>
+    10: </div>
+  
+app/views/auth/responses/show.html.erb:8:in `_app_views_auth_responses_show_html_erb__2898667696494213666_70305430046160'
+Started GET "/auth/responses/index" for 127.0.0.1 at 2020-01-30 10:05:22 -0500
+Processing by Auth::ResponsesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /home/amber/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering auth/responses/index.html.erb within layouts/application
+  [1m[36mResponse Load (1.9ms)[0m  [1m[34mSELECT `responses`.* FROM `responses`[0m
+  ↳ app/views/auth/responses/index.html.erb:2
+  Rendered auth/responses/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 92ms (Views: 88.3ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/auth/questions/index" for 127.0.0.1 at 2020-01-30 10:05:25 -0500
+Processing by Auth::QuestionsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /home/amber/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mRole Load (2.4ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1[0m
+  ↳ app/policies/question_policy.rb:10
+  Rendering auth/questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (1.7ms)[0m  [1m[34mSELECT `questions`.* FROM `questions`[0m
+  ↳ app/views/auth/questions/index.html.erb:2
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mRole Load (0.2ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 3[0m
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mAuth::Topic Load (0.2ms)[0m  [1m[34mSELECT  `auth_topics`.* FROM `auth_topics` WHERE `auth_topics`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/auth/questions/index.html.erb:16
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mRole Load (0.2ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 2[0m
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mAuth::Topic Load (2.5ms)[0m  [1m[34mSELECT  `auth_topics`.* FROM `auth_topics` WHERE `auth_topics`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/auth/questions/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mCACHE Role Load (0.0ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 2[0m  [["user_id", 2]]
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mAuth::Topic Load (3.2ms)[0m  [1m[34mSELECT  `auth_topics`.* FROM `auth_topics` WHERE `auth_topics`.`id` = 3 LIMIT 1[0m
+  ↳ app/views/auth/questions/index.html.erb:16
+  Rendered auth/questions/index.html.erb within layouts/application (26.9ms)
+Completed 200 OK in 107ms (Views: 91.3ms | ActiveRecord: 13.0ms)
+
+
+Started GET "/auth/questions/show?qid=1" for 127.0.0.1 at 2020-01-30 10:05:29 -0500
+Processing by Auth::QuestionsController#show as HTML
+  Parameters: {"qid"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /home/amber/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  `questions`.* FROM `questions` WHERE `questions`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/auth/questions_controller.rb:24
+  Rendering auth/questions/show.html.erb within layouts/application
+  [1m[36mResponse Load (2.4ms)[0m  [1m[34mSELECT `responses`.* FROM `responses` WHERE `responses`.`question_id` = 1[0m
+  ↳ app/views/auth/questions/show.html.erb:4
+  Rendered auth/questions/show.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 88ms (Views: 81.8ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/auth/questions/show?qid=1" for 127.0.0.1 at 2020-01-30 10:06:00 -0500
+Processing by Auth::QuestionsController#show as HTML
+  Parameters: {"qid"=>"1"}
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /home/amber/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  `questions`.* FROM `questions` WHERE `questions`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/auth/questions_controller.rb:24
+  Rendering auth/questions/show.html.erb within layouts/application
+  [1m[36mResponse Load (0.2ms)[0m  [1m[34mSELECT `responses`.* FROM `responses` WHERE `responses`.`question_id` = 1[0m
+  ↳ app/views/auth/questions/show.html.erb:4
+  Rendered auth/questions/show.html.erb within layouts/application (40.0ms)
+Completed 500 Internal Server Error in 54ms (ActiveRecord: 2.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `comment' for #<Question:0x00007fe2859156d0>
+Did you mean?  comments
+               comments=):
+    2: <div class="card">
+    3:    <%= markdown(@question.body).html_safe %>
+    4:    <h5 class="card-title"><% @question.responses.each do |r| %>
+    5:      <p><%= @question.comment %></p>
+    6:     <%= markdown(r.body).html_safe %>
+    7:     <%= link_to "Add Comment" , new_comment_url(commentable_id: @question.id, commentable_type: @question.class.name)%>
+    8: </div>
+  
+app/views/auth/questions/show.html.erb:5:in `block in _app_views_auth_questions_show_html_erb__1878648120027401422_70305440090080'
+app/views/auth/questions/show.html.erb:4:in `_app_views_auth_questions_show_html_erb__1878648120027401422_70305440090080'
+Started GET "/auth/questions/show?qid=1" for 127.0.0.1 at 2020-01-30 10:06:16 -0500
+Processing by Auth::QuestionsController#show as HTML
+  Parameters: {"qid"=>"1"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /home/amber/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mQuestion Load (3.1ms)[0m  [1m[34mSELECT  `questions`.* FROM `questions` WHERE `questions`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/auth/questions_controller.rb:24
+  Rendering auth/questions/show.html.erb within layouts/application
+  [1m[36mResponse Load (1.8ms)[0m  [1m[34mSELECT `responses`.* FROM `responses` WHERE `responses`.`question_id` = 1[0m
+  ↳ app/views/auth/questions/show.html.erb:4
+  Rendered auth/questions/show.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 86ms (Views: 76.2ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/auth/questions/show?qid=1" for 127.0.0.1 at 2020-01-30 10:06:25 -0500
+Processing by Auth::QuestionsController#show as HTML
+  Parameters: {"qid"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /home/amber/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mQuestion Load (2.3ms)[0m  [1m[34mSELECT  `questions`.* FROM `questions` WHERE `questions`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/auth/questions_controller.rb:24
+  Rendering auth/questions/show.html.erb within layouts/application
+  [1m[36mResponse Load (0.7ms)[0m  [1m[34mSELECT `responses`.* FROM `responses` WHERE `responses`.`question_id` = 1[0m
+  ↳ app/views/auth/questions/show.html.erb:4
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT  `comments`.* FROM `comments` WHERE `comments`.`commentable_id` = 1 AND `comments`.`commentable_type` = 'Question' LIMIT 11[0m
+  ↳ /usr/share/rvm/rubies/ruby-2.5.3/lib/ruby/gems/2.5.0/gems/did_you_mean-1.2.0/lib/did_you_mean/core_ext/name_error.rb:8
+  Rendered auth/questions/show.html.erb within layouts/application (19.8ms)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 3.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `body' for #<ActiveRecord::Associations::CollectionProxy []>):
+    2: <div class="card">
+    3:    <%= markdown(@question.body).html_safe %>
+    4:    <h5 class="card-title"><% @question.responses.each do |r| %>
+    5:      <p><%= @question.comments.body %></p>
+    6:     <%= markdown(r.body).html_safe %>
+    7:     <%= link_to "Add Comment" , new_comment_url(commentable_id: @question.id, commentable_type: @question.class.name)%>
+    8: </div>
+  
+app/views/auth/questions/show.html.erb:5:in `block in _app_views_auth_questions_show_html_erb__1878648120027401422_70305429722120'
+app/views/auth/questions/show.html.erb:4:in `_app_views_auth_questions_show_html_erb__1878648120027401422_70305429722120'
+Started GET "/auth/questions/show?qid=1" for 127.0.0.1 at 2020-01-30 10:06:30 -0500
+Processing by Auth::QuestionsController#show as HTML
+  Parameters: {"qid"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /home/amber/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  `questions`.* FROM `questions` WHERE `questions`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/auth/questions_controller.rb:24
+  Rendering auth/questions/show.html.erb within layouts/application
+  [1m[36mResponse Load (1.0ms)[0m  [1m[34mSELECT `responses`.* FROM `responses` WHERE `responses`.`question_id` = 1[0m
+  ↳ app/views/auth/questions/show.html.erb:4
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT  `comments`.* FROM `comments` WHERE `comments`.`commentable_id` = 1 AND `comments`.`commentable_type` = 'Question' LIMIT 11[0m
+  ↳ /usr/share/rvm/rubies/ruby-2.5.3/lib/ruby/gems/2.5.0/gems/did_you_mean-1.2.0/lib/did_you_mean/core_ext/name_error.rb:8
+  Rendered auth/questions/show.html.erb within layouts/application (18.3ms)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 1.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `body' for #<ActiveRecord::Associations::CollectionProxy []>):
+    2: <div class="card">
+    3:    <%= markdown(@question.body).html_safe %>
+    4:    <h5 class="card-title"><% @question.responses.each do |r| %>
+    5:      <p><%= @question.comments.body %></p>
+    6:     <%= markdown(r.body).html_safe %>
+    7:     <%= link_to "Add Comment" , new_comment_url(commentable_id: @question.id, commentable_type: @question.class.name)%>
+    8: </div>
+  
+app/views/auth/questions/show.html.erb:5:in `block in _app_views_auth_questions_show_html_erb__1878648120027401422_70305438483740'
+app/views/auth/questions/show.html.erb:4:in `_app_views_auth_questions_show_html_erb__1878648120027401422_70305438483740'
+Started GET "/auth/questions/index" for 127.0.0.1 at 2020-01-30 10:06:30 -0500
+Processing by Auth::QuestionsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /home/amber/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mRole Load (18.7ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1[0m
+  ↳ app/policies/question_policy.rb:10
+  Rendering auth/questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (0.9ms)[0m  [1m[34mSELECT `questions`.* FROM `questions`[0m
+  ↳ app/views/auth/questions/index.html.erb:2
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mRole Load (0.6ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 3[0m
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mAuth::Topic Load (2.0ms)[0m  [1m[34mSELECT  `auth_topics`.* FROM `auth_topics` WHERE `auth_topics`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/auth/questions/index.html.erb:16
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mRole Load (3.4ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 2[0m
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mAuth::Topic Load (0.2ms)[0m  [1m[34mSELECT  `auth_topics`.* FROM `auth_topics` WHERE `auth_topics`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/auth/questions/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mCACHE Role Load (0.0ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 2[0m  [["user_id", 2]]
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mAuth::Topic Load (2.7ms)[0m  [1m[34mSELECT  `auth_topics`.* FROM `auth_topics` WHERE `auth_topics`.`id` = 3 LIMIT 1[0m
+  ↳ app/views/auth/questions/index.html.erb:16
+  Rendered auth/questions/index.html.erb within layouts/application (26.9ms)
+Completed 200 OK in 146ms (Views: 110.5ms | ActiveRecord: 30.2ms)
+
+
+Started GET "/auth/questions/show?qid=1" for 127.0.0.1 at 2020-01-30 10:06:32 -0500
+Processing by Auth::QuestionsController#show as HTML
+  Parameters: {"qid"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /home/amber/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mQuestion Load (0.7ms)[0m  [1m[34mSELECT  `questions`.* FROM `questions` WHERE `questions`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/auth/questions_controller.rb:24
+  Rendering auth/questions/show.html.erb within layouts/application
+  [1m[36mResponse Load (5.0ms)[0m  [1m[34mSELECT `responses`.* FROM `responses` WHERE `responses`.`question_id` = 1[0m
+  ↳ app/views/auth/questions/show.html.erb:4
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT  `comments`.* FROM `comments` WHERE `comments`.`commentable_id` = 1 AND `comments`.`commentable_type` = 'Question' LIMIT 11[0m
+  ↳ /usr/share/rvm/rubies/ruby-2.5.3/lib/ruby/gems/2.5.0/gems/did_you_mean-1.2.0/lib/did_you_mean/core_ext/name_error.rb:8
+  Rendered auth/questions/show.html.erb within layouts/application (17.5ms)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 6.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `body' for #<ActiveRecord::Associations::CollectionProxy []>):
+    2: <div class="card">
+    3:    <%= markdown(@question.body).html_safe %>
+    4:    <h5 class="card-title"><% @question.responses.each do |r| %>
+    5:      <p><%= @question.comments.body %></p>
+    6:     <%= markdown(r.body).html_safe %>
+    7:     <%= link_to "Add Comment" , new_comment_url(commentable_id: @question.id, commentable_type: @question.class.name)%>
+    8: </div>
+  
+app/views/auth/questions/show.html.erb:5:in `block in _app_views_auth_questions_show_html_erb__1878648120027401422_70305434742880'
+app/views/auth/questions/show.html.erb:4:in `_app_views_auth_questions_show_html_erb__1878648120027401422_70305434742880'
+Started GET "/auth/questions/index" for 127.0.0.1 at 2020-01-30 10:06:56 -0500
+Processing by Auth::QuestionsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /home/amber/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mRole Load (0.2ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1[0m
+  ↳ app/policies/question_policy.rb:10
+  Rendering auth/questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT `questions`.* FROM `questions`[0m
+  ↳ app/views/auth/questions/index.html.erb:2
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mRole Load (0.2ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 3[0m
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mAuth::Topic Load (2.0ms)[0m  [1m[34mSELECT  `auth_topics`.* FROM `auth_topics` WHERE `auth_topics`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/auth/questions/index.html.erb:16
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mRole Load (2.7ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 2[0m
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mAuth::Topic Load (0.2ms)[0m  [1m[34mSELECT  `auth_topics`.* FROM `auth_topics` WHERE `auth_topics`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/auth/questions/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mCACHE Role Load (0.0ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 2[0m  [["user_id", 2]]
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mAuth::Topic Load (1.6ms)[0m  [1m[34mSELECT  `auth_topics`.* FROM `auth_topics` WHERE `auth_topics`.`id` = 3 LIMIT 1[0m
+  ↳ app/views/auth/questions/index.html.erb:16
+  Rendered auth/questions/index.html.erb within layouts/application (26.9ms)
+Completed 200 OK in 123ms (Views: 106.3ms | ActiveRecord: 11.5ms)
+
+
+Started GET "/auth/questions/show?qid=1" for 127.0.0.1 at 2020-01-30 10:06:58 -0500
+Processing by Auth::QuestionsController#show as HTML
+  Parameters: {"qid"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /home/amber/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mQuestion Load (1.9ms)[0m  [1m[34mSELECT  `questions`.* FROM `questions` WHERE `questions`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/auth/questions_controller.rb:24
+  Rendering auth/questions/show.html.erb within layouts/application
+  [1m[36mResponse Load (2.0ms)[0m  [1m[34mSELECT `responses`.* FROM `responses` WHERE `responses`.`question_id` = 1[0m
+  ↳ app/views/auth/questions/show.html.erb:4
+  Rendered auth/questions/show.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 98ms (Views: 91.3ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/auth/questions/show?qid=1" for 127.0.0.1 at 2020-01-30 10:11:13 -0500
+Processing by Auth::QuestionsController#show as HTML
+  Parameters: {"qid"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /home/amber/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mQuestion Load (1.6ms)[0m  [1m[34mSELECT  `questions`.* FROM `questions` WHERE `questions`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/auth/questions_controller.rb:24
+  Rendering auth/questions/show.html.erb within layouts/application
+  [1m[36mResponse Load (0.9ms)[0m  [1m[34mSELECT `responses`.* FROM `responses` WHERE `responses`.`question_id` = 1[0m
+  ↳ app/views/auth/questions/show.html.erb:4
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT  `comments`.* FROM `comments` WHERE `comments`.`commentable_id` = 1 AND `comments`.`commentable_type` = 'Question' LIMIT 11[0m
+  ↳ /usr/share/rvm/rubies/ruby-2.5.3/lib/ruby/gems/2.5.0/gems/did_you_mean-1.2.0/lib/did_you_mean/core_ext/name_error.rb:8
+  Rendered auth/questions/show.html.erb within layouts/application (16.9ms)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 3.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `body' for #<ActiveRecord::Associations::CollectionProxy []>):
+    2: <div class="card">
+    3:    <%= markdown(@question.body).html_safe %>
+    4:    <h5 class="card-title"><% @question.responses.each do |r| %>
+    5:      <p><%= @question.comments.body %></p>
+    6:     <%= markdown(r.body).html_safe %>
+    7:     <%= link_to "Add Comment" , new_comment_url(commentable_id: @question.id, commentable_type: @question.class.name)%>
+    8: </div>
+  
+app/views/auth/questions/show.html.erb:5:in `block in _app_views_auth_questions_show_html_erb__1878648120027401422_70305444227520'
+app/views/auth/questions/show.html.erb:4:in `_app_views_auth_questions_show_html_erb__1878648120027401422_70305444227520'
+Started GET "/auth/questions/show?qid=1" for 127.0.0.1 at 2020-01-30 10:11:24 -0500
+Processing by Auth::QuestionsController#show as HTML
+  Parameters: {"qid"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /home/amber/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mQuestion Load (3.4ms)[0m  [1m[34mSELECT  `questions`.* FROM `questions` WHERE `questions`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/auth/questions_controller.rb:24
+  Rendering auth/questions/show.html.erb within layouts/application
+  [1m[36mResponse Load (2.1ms)[0m  [1m[34mSELECT `responses`.* FROM `responses` WHERE `responses`.`question_id` = 1[0m
+  ↳ app/views/auth/questions/show.html.erb:4
+  [1m[36mComment Load (2.2ms)[0m  [1m[34mSELECT  `comments`.* FROM `comments` WHERE `comments`.`commentable_id` = 1 AND `comments`.`commentable_type` = 'Question' LIMIT 11[0m
+  ↳ /usr/share/rvm/rubies/ruby-2.5.3/lib/ruby/gems/2.5.0/gems/did_you_mean-1.2.0/lib/did_you_mean/core_ext/name_error.rb:8
+  Rendered auth/questions/show.html.erb within layouts/application (20.2ms)
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 7.9ms)
+
+
+  
+ActionView::Template::Error (undefined method `title' for #<ActiveRecord::Associations::CollectionProxy []>):
+    2: <div class="card">
+    3:    <%= markdown(@question.body).html_safe %>
+    4:    <h5 class="card-title"><% @question.responses.each do |r| %>
+    5:      <p><%= @question.comments.title %></p>
+    6:     <%= markdown(r.body).html_safe %>
+    7:     <%= link_to "Add Comment" , new_comment_url(commentable_id: @question.id, commentable_type: @question.class.name)%>
+    8: </div>
+  
+app/views/auth/questions/show.html.erb:5:in `block in _app_views_auth_questions_show_html_erb__1878648120027401422_70305446731800'
+app/views/auth/questions/show.html.erb:4:in `_app_views_auth_questions_show_html_erb__1878648120027401422_70305446731800'
+Started GET "/auth/questions/index" for 127.0.0.1 at 2020-01-30 10:11:25 -0500
+Processing by Auth::QuestionsController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /home/amber/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mRole Load (13.9ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1[0m
+  ↳ app/policies/question_policy.rb:10
+  Rendering auth/questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (0.5ms)[0m  [1m[34mSELECT `questions`.* FROM `questions`[0m
+  ↳ app/views/auth/questions/index.html.erb:2
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mRole Load (7.1ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 3[0m
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mAuth::Topic Load (1.1ms)[0m  [1m[34mSELECT  `auth_topics`.* FROM `auth_topics` WHERE `auth_topics`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/auth/questions/index.html.erb:16
+  [1m[36mUser Load (27.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mRole Load (0.3ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 2[0m
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mAuth::Topic Load (24.4ms)[0m  [1m[34mSELECT  `auth_topics`.* FROM `auth_topics` WHERE `auth_topics`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/auth/questions/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mCACHE Role Load (0.0ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 2[0m  [["user_id", 2]]
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mAuth::Topic Load (23.3ms)[0m  [1m[34mSELECT  `auth_topics`.* FROM `auth_topics` WHERE `auth_topics`.`id` = 3 LIMIT 1[0m
+  ↳ app/views/auth/questions/index.html.erb:16
+  Rendered auth/questions/index.html.erb within layouts/application (118.1ms)
+Completed 200 OK in 338ms (Views: 234.2ms | ActiveRecord: 99.3ms)
+
+
+Started GET "/auth/questions/show?qid=1" for 127.0.0.1 at 2020-01-30 10:11:27 -0500
+Processing by Auth::QuestionsController#show as HTML
+  Parameters: {"qid"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /home/amber/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  `questions`.* FROM `questions` WHERE `questions`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/auth/questions_controller.rb:24
+  Rendering auth/questions/show.html.erb within layouts/application
+  [1m[36mResponse Load (2.0ms)[0m  [1m[34mSELECT `responses`.* FROM `responses` WHERE `responses`.`question_id` = 1[0m
+  ↳ app/views/auth/questions/show.html.erb:4
+  [1m[36mComment Load (2.8ms)[0m  [1m[34mSELECT  `comments`.* FROM `comments` WHERE `comments`.`commentable_id` = 1 AND `comments`.`commentable_type` = 'Question' LIMIT 11[0m
+  ↳ /usr/share/rvm/rubies/ruby-2.5.3/lib/ruby/gems/2.5.0/gems/did_you_mean-1.2.0/lib/did_you_mean/core_ext/name_error.rb:8
+  Rendered auth/questions/show.html.erb within layouts/application (17.4ms)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 5.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `title' for #<ActiveRecord::Associations::CollectionProxy []>):
+    2: <div class="card">
+    3:    <%= markdown(@question.body).html_safe %>
+    4:    <h5 class="card-title"><% @question.responses.each do |r| %>
+    5:      <p><%= @question.comments.title %></p>
+    6:     <%= markdown(r.body).html_safe %>
+    7:     <%= link_to "Add Comment" , new_comment_url(commentable_id: @question.id, commentable_type: @question.class.name)%>
+    8: </div>
+  
+app/views/auth/questions/show.html.erb:5:in `block in _app_views_auth_questions_show_html_erb__1878648120027401422_70305445220640'
+app/views/auth/questions/show.html.erb:4:in `_app_views_auth_questions_show_html_erb__1878648120027401422_70305445220640'
+Started GET "/auth/questions/show?qid=1" for 127.0.0.1 at 2020-01-30 10:12:27 -0500
+Processing by Auth::QuestionsController#show as HTML
+  Parameters: {"qid"=>"1"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /home/amber/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mQuestion Load (1.1ms)[0m  [1m[34mSELECT  `questions`.* FROM `questions` WHERE `questions`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/auth/questions_controller.rb:24
+  Rendering auth/questions/show.html.erb within layouts/application
+  [1m[36mResponse Load (1.9ms)[0m  [1m[34mSELECT `responses`.* FROM `responses` WHERE `responses`.`question_id` = 1[0m
+  ↳ app/views/auth/questions/show.html.erb:4
+  Rendered auth/questions/show.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 100ms (Views: 92.5ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/pages/home" for 127.0.0.1 at 2020-01-30 10:23:07 -0500
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/amber/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 88ms (Views: 87.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/questions/index" for 127.0.0.1 at 2020-01-30 10:23:10 -0500
+Processing by Auth::QuestionsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /home/amber/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mRole Load (2.2ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1[0m
+  ↳ app/policies/question_policy.rb:10
+  Rendering auth/questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (0.4ms)[0m  [1m[34mSELECT `questions`.* FROM `questions`[0m
+  ↳ app/views/auth/questions/index.html.erb:2
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mRole Load (2.1ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 3[0m
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mAuth::Topic Load (1.8ms)[0m  [1m[34mSELECT  `auth_topics`.* FROM `auth_topics` WHERE `auth_topics`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/auth/questions/index.html.erb:16
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mRole Load (1.7ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 2[0m
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mAuth::Topic Load (1.6ms)[0m  [1m[34mSELECT  `auth_topics`.* FROM `auth_topics` WHERE `auth_topics`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/auth/questions/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mCACHE Role Load (0.0ms)[0m  [1m[34mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 2[0m  [["user_id", 2]]
+  ↳ app/views/auth/questions/index.html.erb:7
+  [1m[36mAuth::Topic Load (0.2ms)[0m  [1m[34mSELECT  `auth_topics`.* FROM `auth_topics` WHERE `auth_topics`.`id` = 3 LIMIT 1[0m
+  ↳ app/views/auth/questions/index.html.erb:16
+  Rendered auth/questions/index.html.erb within layouts/application (25.3ms)
+Completed 200 OK in 112ms (Views: 97.0ms | ActiveRecord: 12.1ms)
+
+
