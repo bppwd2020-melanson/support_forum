@@ -12,7 +12,7 @@ gem 'refile-mini_magick', github: 'refile/refile-mini_magick', branch: 'master'
 gem 'sqlite3'
 gem 'redcarpet'
 # Use Puma as the app server
-gem 'puma', '~> 3.11'
+gem 'puma', '~> 3.12'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
